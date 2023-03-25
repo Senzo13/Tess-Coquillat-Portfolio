@@ -1,0 +1,92 @@
+$TITLE_BIG_FONT_SIZE: 26px;
+$TITLE_MEDIUM_FONT_SIZE: 18px;
+$TITLE_SMALL_FONT_SIZE: 16px;
+$TITLE_FONT_WEIGHT: 100;
+$TEXT_FONT_SIZE_BIG: 16px;
+$TEXT_FONT_SIZE_MEDIUM: 14px;
+$TEXT_FONT_SIZE_SMALL: 12px;
+$TEXT_FONT_WEIGHT: 100;
+$PADDING_BIG: 42px;
+$PADDING_MEDIUM: 24px;
+$PADDING_SMALL: 12px;
+$PADDING: 20px;
+$MARGIN_BIG: 42px;
+$MARGIN_MEDIUM: 24px;
+$MARGIN_SMALL: 12px;
+
+.content {
+  position: relative;
+  display: flex;
+  padding-bottom: $PADDING;
+  margin-right: 36px;
+  margin-bottom: 36px;
+  width: 650px;
+  height: 620px;
+  border-radius: 0px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2196078431), 0 0 2px rgba(0, 0, 0, 0.384);
+  // make the content responsive
+  @media (max-width: 768px) {
+    width: 100vh !important;
+    height: auto !important;
+    margin: 0;
+    display: flex;
+    z-index: 2;
+    padding: 0;
+  }
+}
+
+.content_parent {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  padding-top: 110px;
+  padding-left: 400px;
+  // make the content responsive
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+    justify-content: center !important;
+    padding-top: 0px;
+    padding-left: 0;
+  }
+}
+
+// .content_right {
+//   //   width: 79%;
+//   width: 39.5%;
+//   height: 620px;
+//   left: 57.8%;
+//   right: 17%;
+//   position: absolute;
+//   top: 9%;
+//   border-radius: 25px;
+//   background-color: rgb(255, 255, 255);
+//   box-shadow: 0 0 1px #00000038, 0 0 5px #0000002f;
+// }
+
+.content_left_down {
+  //   width: 79%;
+  width: 39.5%;
+  height: 620px;
+  left: 410px;
+  right: 17%;
+  position: absolute;
+  top: 57.8%;
+  border-radius: 25px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 1px #00000038, 0 0 5px #0000002f;
+}
+
+.content_right_down {
+  //   width: 79%;
+  width: 39.5%;
+  height: 620px;
+  left: 57.8%;
+  right: 17%;
+  position: absolute;
+  top: 58%;
+  border-radius: 25px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 1px #00000038, 0 0 5px #0000002f;
+}

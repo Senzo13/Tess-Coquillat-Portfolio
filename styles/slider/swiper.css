@@ -1,0 +1,21 @@
+.swiper-container {
+  margin:0;
+  padding:0;
+  
+  width: 100%!important;
+  height: 100%!important;
+  overflow: hidden!important;
+  } 
+  
+  .swiper-slide {
+   background-color: purple!important;
+   width: 35.7% !important;
+  }
+  
+  .blue {
+  background-color: blue!important;
+  }
+  
+  .red {
+  background-color: red!important;
+  }

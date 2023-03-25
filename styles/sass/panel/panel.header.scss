@@ -1,0 +1,31 @@
+$TITLE_BIG_FONT_SIZE: 26px;
+$TITLE_MEDIUM_FONT_SIZE: 24px;
+$TITLE_SMALL_FONT_SIZE: 18px;
+$TITLE_FONT_WEIGHT: 100;
+$TEXT_FONT_SIZE_BIG: 16px;
+$TEXT_FONT_SIZE_MEDIUM: 14px;
+$TEXT_FONT_SIZE_SMALL: 12px;
+$TEXT_FONT_WEIGHT: 100;
+
+.header_panel {
+  box-shadow: 0 0 1px #00000038, 0 0 5px #0000002f;
+  background-color: #f8f9fa;
+  display: flex !important;
+  position: fixed;
+  padding-left: 370px;
+  width: 100% !important;
+  z-index: 1;
+  top: 0px;
+  height: 80px;
+  .navbar-toggler-icon {
+    border-color: red !important;
+  }
+  .navbar-toggler {
+    margin-left: 20px;
+    border: 1.5px #43566984 solid !important;
+  }
+}
+
+.nav-link {
+  padding-right: 28px !important;
+}

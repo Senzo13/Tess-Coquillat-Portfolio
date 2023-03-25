@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+  box-sizing: none;
+  position: relative;
+}
+
+html {
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+}
+
+.arrow-index:hover {
+  -webkit-filter: drop-shadow(0 0 0.5rem #fff);
+  filter: drop-shadow(0 0 0.5rem #fff);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.sauvetage {
+  position: absolute;
+  left: 0%;
+  margin-top: 4%;
+  width: 100%;
+  z-index: 600;
+  display: flex;
+  justify-content: space-around;
+}
+
+.index_carrousel {
+  position: absolute;
+  top: 2%;
+  left: 0%;
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+  // media queries
+  @media (max-width: 768px) {
+    width: 100% !important;
+  }
+}
+
+.index_header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.index_header_rounded {
+  position: absolute;
+  top: 15%;
+  z-index: 2;
+}
+
+.index_resize_artistName {
+  width: 60%;
+}
+
+.index_parent_artistName {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.index_artistName {
+  width: 100%;
+  height: 403px;
+  background-size: 100% 100%;
+  // no repeat
+  background-repeat: no-repeat;
+  background-image: url("/assets/nom-prenom.png");
+}
+
+body {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+}

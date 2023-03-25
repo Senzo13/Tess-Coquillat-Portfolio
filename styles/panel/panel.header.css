@@ -1,0 +1,25 @@
+.header_panel {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2196078431), 0 0 5px rgba(0, 0, 0, 0.1843137255);
+  background-color: #f8f9fa;
+  display: flex !important;
+  position: fixed;
+  padding-left: 370px;
+  width: 100% !important;
+  z-index: 1;
+  top: 0px;
+  height: 80px;
+}
+.header_panel .navbar-toggler-icon {
+  border-color: red !important;
+}
+.header_panel .navbar-toggler {
+  margin-left: 20px;
+  border: 1.5px rgba(67, 86, 105, 0.5176470588) solid !important;
+}
+
+.nav-link {
+  font-family: "Roboto", sans-serif;
+  padding-right: 28px !important;
+}
+
+/*# sourceMappingURL=panel.header.css.map */

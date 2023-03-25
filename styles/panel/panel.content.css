@@ -1,0 +1,47 @@
+.content {
+  padding: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 650px;
+  height: 620px;
+  border-radius: 25px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2196078431),
+    0 0 5px rgba(0, 0, 0, 0.1843137255);
+}
+
+.content_parent {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  padding-top: 110px;
+  padding-left: 400px;
+}
+
+.content_left_down {
+  width: 39.5%;
+  height: 620px;
+  left: 410px;
+  right: 17%;
+  position: absolute;
+  top: 57.8%;
+  border-radius: 25px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2196078431),
+    0 0 5px rgba(0, 0, 0, 0.1843137255);
+}
+
+.content_right_down {
+  width: 39.5%;
+  height: 620px;
+  left: 57.8%;
+  right: 17%;
+  position: absolute;
+  top: 58%;
+  border-radius: 25px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2196078431),
+    0 0 5px rgba(0, 0, 0, 0.1843137255);
+}
+
+/*# sourceMappingURL=panel.content.css.map */

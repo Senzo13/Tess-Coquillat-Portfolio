@@ -1,0 +1,205 @@
+$TITLE_BIG_FONT_SIZE: 26px;
+$TITLE_MEDIUM_FONT_SIZE: 18px;
+$TITLE_SMALL_FONT_SIZE: 16px;
+$TITLE_FONT_WEIGHT: 100;
+$TEXT_FONT_SIZE_BIG: 16px;
+$TEXT_FONT_SIZE_MEDIUM: 14px;
+$TEXT_FONT_SIZE_SMALL: 12px;
+$TEXT_FONT_WEIGHT: 100;
+
+.sidebar {
+  width: 370px;
+  height: 100% !important;
+  position: fixed;
+  left: 0px;
+  top: 0;
+  z-index: 2;
+
+  border-right: 2px solid black;
+  box-shadow: 0 0 1px #00000038, 0 0 5px #0000002f;
+  background-color: #343a40;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-bottom: 20px;
+    top: 0;
+    z-index: 2;
+    // border right shadow
+    border-right: 0px;
+    background-color: #343a40;
+  }
+}
+
+.sidebar__header {
+  box-shadow: 0 0 1px #00000038, 0 0 5px #0000002f !important;
+  h1 {
+    font-size: $TITLE_BIG_FONT_SIZE !important;
+    font-weight: 100 !important;
+  }
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  color: white;
+  background-color: #255482;
+}
+
+.nav-item_img {
+  transition: 0.5s !important;
+  display: flex !important;
+  align-items: center !important;
+  li {
+    height: 150px !important;
+
+    text-decoration: none;
+    list-style: none;
+    width: auto !important;
+    color: white;
+    text-decoration-style: none;
+    padding: 0 !important;
+  }
+
+  h1 {
+    font-size: $TITLE_MEDIUM_FONT_SIZE !important;
+    font-weight: 300;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  margin: 0 !important;
+  margin-top: 50px !important;
+  margin-bottom: 20px !important;
+  img {
+    margin-right: 14% !important;
+    cursor: pointer;
+    filter: invert(90%);
+    transition: 0.5s;
+  }
+  height: 50px !important;
+}
+
+.nav_items {
+  width: auto !important;
+  padding-left: 24% !important;
+  justify-content: center;
+  align-items: center !important;
+  transition: 0.5s !important;
+
+  @media (max-width: 768px) {
+    padding-left: 30% !important;
+  }
+}
+
+.nav-item_img:hover {
+  transition: 0.5s;
+  cursor: pointer;
+  filter: invert(10%);
+  transform: scale(1.01);
+}
+
+.profile {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white !important;
+  justify-content: center;
+}
+
+.profile-user-name {
+  font-size: $TITLE_BIG_FONT_SIZE !important;
+  font-weight: 100 !important;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+.profile-image {
+  width: auto !important;
+  padding-top: 24px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  color: white !important;
+  color: rgba(161, 161, 161, 0.124);
+  transition: 0.2s;
+
+  img {
+    width: 225px;
+    height: 225px;
+    // resize contain
+    object-fit: scale-down;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+  img:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    // exterieur bordure lumineuse sur l'image
+    transform: scale(1.01);
+    box-shadow: 0 0 1px #6b676752, 0 0 5px #d7d3d3de;
+  }
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  text-decoration-style: none;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.nav {
+  width: 100%;
+  background-color: red;
+  span {
+    text-decoration: none !important;
+    list-style: none !important;
+    color: white !important;
+    text-decoration-style: none !important;
+    text-decoration-color: white !important;
+  }
+
+  height: auto !important;
+  padding-top: 20px;
+  margin: 0 !important;
+  display: flex;
+  align-items: center !important;
+  color: white !important;
+}
+.hr {
+  opacity: 0.4;
+  animation-fill-mode: forwards;
+  background-color: #97999b;
+  border: 0;
+  height: 2px;
+  margin: 0.5rem 0;
+  overflow: hidden;
+  padding: 0;
+  width: 100%;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 0px !important;
+  border-right: 0px !important;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  margin-top: 8px !important;
+  //shadow box
+  box-shadow: 0 0 5px #000000, 0 0 5px #000000;
+}
+
+body {
+  background-color: #ffffff !important;
+}

@@ -1,0 +1,224 @@
+.card:hover {
+  transition: 0.3s;
+}
+
+.container-customer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  // make a espacement between the cards
+  align-items: center;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+#col-test {
+  width: 320px;
+  margin-bottom: 15px;
+  // fait un espacement entre les cards
+  margin-right: 20px;
+  height: 520px !important;
+  overflow: auto;
+  @media (max-width: 768px) {
+    width: 80%;
+    margin-left: 20px;
+    margin-top: 25px;
+    height: 250px;
+  }
+}
+
+.customerWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  // make the content responsive
+  @media (max-width: 768px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px !important;
+    padding-top: 22px;
+  }
+}
+
+.user-content {
+  p {
+    padding-top: 25px;
+  }
+  padding-top: 25px;
+}
+
+.ratings i {
+  color: blue;
+}
+
+$primary: #11998e;
+$secondary: #38ef7d;
+$white: #fff;
+$gray: #9b9b9b;
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 60%;
+  border: 0;
+  text-align: center;
+  border-bottom: 2px solid $gray;
+  outline: 0;
+  color: black;
+  padding: 7px 0;
+  background: rgba(101, 115, 220, 0.13);
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  color: $gray;
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    color: $primary;
+    font-weight: 700;
+  }
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, $primary, $secondary);
+  border-image-slice: 1;
+}
+/* reset input */
+.form__field {
+  &:required,
+  &:invalid {
+    box-shadow: none;
+  }
+}
+/* demo */
+
+//TEXT AREA
+.active-pink-textarea.md-form label.active {
+  color: #f48fb1;
+}
+.pink-textarea textarea.md-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #f48fb1;
+  box-shadow: 0 1px 0 0 #f48fb1;
+}
+.pink-textarea.md-form .prefix.active {
+  color: #f48fb1;
+}
+.active-pink-textarea.md-form
+  textarea.md-textarea:focus:not([readonly])
+  + label {
+  color: #f48fb1;
+}
+
+.active-amber-textarea.md-form label.active {
+  color: #ffa000;
+}
+.amber-textarea textarea.md-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #ffa000;
+  box-shadow: 0 1px 0 0 #ffa000;
+}
+.amber-textarea.md-form .prefix.active {
+  color: #ffa000;
+}
+.active-amber-textarea.md-form
+  textarea.md-textarea:focus:not([readonly])
+  + label {
+  color: #ffa000;
+}
+
+.active-pink-textarea-2 textarea.md-textarea {
+  border-bottom: 1px solid #f48fb1;
+  box-shadow: 0 1px 0 0 #f48fb1;
+}
+.active-pink-textarea-2.md-form label.active {
+  color: #f48fb1;
+}
+.active-pink-textarea-2.md-form label {
+  color: #f48fb1;
+}
+.active-pink-textarea-2.md-form .prefix {
+  color: #f48fb1;
+}
+.active-pink-textarea-2.md-form
+  textarea.md-textarea:focus:not([readonly])
+  + label {
+  color: #f48fb1;
+}
+
+.active-amber-textarea-2 textarea.md-textarea {
+  border-bottom: 1px solid #ffa000;
+  box-shadow: 0 1px 0 0 #ffa000;
+}
+.active-amber-textarea-2.md-form label.active {
+  color: #ffa000;
+}
+.active-amber-textarea-2.md-form label {
+  color: #ffa000;
+}
+.active-amber-textarea-2.md-form .prefix {
+  color: #ffa000;
+}
+.active-amber-textarea-2.md-form
+  textarea.md-textarea:focus:not([readonly])
+  + label {
+  color: #ffa000;
+}
+
+.img-wrap {
+  position: relative;
+  display: inline-block;
+}
+.img-wrap .close {
+  position: absolute;
+  top: -10px;
+  right: 2px;
+  width: 50px !important;
+  z-index: 0;
+  background-color: #fff;
+  padding: 5px 2px 2px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0.4;
+  text-align: center;
+  line-height: 10px;
+  border-radius: 50%;
+}
+.img-wrap:hover .close {
+  opacity: 1;
+}

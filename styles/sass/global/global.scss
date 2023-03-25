@@ -1,0 +1,135 @@
+$COLOR_RED: #e30137;
+$COLOR_BLUE: #3fa9f5;
+$COLOR_ORANGE: #ff931e;
+$COLOR_YELLOW: #ffd213;
+$COLOR_PINK: #ff931e;
+$NORMAL_SIZE: 22px;
+$BIG_SIZE: 26px;
+$SMALL_SIZE: 18px;
+$MEDIUM_SIZE: 26px;
+$COLOR_TITLE: #343a40;
+
+@font-face {
+  src: url("../../public/assets/fonts/MADE_TOMMY_Regular.otf")
+      format("opentype"),
+    url("../../public/assets/fonts/MADE_TOMMY_Regular.otf") format("opentype");
+  font-family: "Made Tommy REGULAR";
+}
+@font-face {
+  src: url("../../public/assets/fonts/MADE_TOMMY_Bold.otf") format("opentype"),
+    url("../../public/assets/fonts/MADE_TOMMY_Bold.otf") format("opentype");
+  font-family: "Made Tommy BOLD";
+}
+@font-face {
+  src: url("../../public/assets/fonts/MADE_TOMMY_Light.otf") format("opentype"),
+    url("../../public/assets/fonts/MADE_TOMMY_Light.otf") format("opentype");
+  font-family: "Made Tommy LIGHT";
+}
+
+option {
+  font-size: $SMALL_SIZE !important;
+  opacity: 0.9 !important;
+  font-family: "Made Tommy LIGHT" !important;
+}
+
+select {
+  font-size: $SMALL_SIZE !important;
+  opacity: 0.9 !important;
+  font-family: "Made Tommy LIGHT" !important;
+}
+
+a {
+  font-size: $SMALL_SIZE !important;
+  opacity: 0.9 !important;
+  font-family: "Made Tommy LIGHT" !important;
+}
+label {
+  font-size: $SMALL_SIZE !important;
+  opacity: 0.9 !important;
+  font-family: "Made Tommy LIGHT" !important;
+}
+
+button {
+  font-size: $NORMAL_SIZE !important;
+  font-family: "Made Tommy LIGHT" !important;
+}
+
+p {
+  font-size: $NORMAL_SIZE !important;
+  font-family: "Made Tommy LIGHT" !important;
+}
+
+span {
+  font-size: $NORMAL_SIZE !important;
+  font-family: "Made Tommy LIGHT" !important;
+}
+
+textarea {
+  font-family: "Made Tommy LIGHT" !important;
+  font-size: $NORMAL_SIZE !important;
+}
+
+input {
+  font-size: $NORMAL_SIZE !important;
+  font-family: "Made Tommy LIGHT" !important;
+}
+
+h1 {
+  font-size: $MEDIUM_SIZE !important;
+  font-family: "Made Tommy BOLD" !important;
+  color: $COLOR_TITLE;
+  letter-spacing: 0.5px;
+}
+
+h2 {
+  font-size: $MEDIUM_SIZE !important;
+  font-family: "Made Tommy BOLD" !important;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+h3 {
+  font-size: $MEDIUM_SIZE !important;
+  font-family: "Made Tommy BOLD" !important;
+  color: $COLOR_TITLE;
+  letter-spacing: 0.5px;
+}
+
+h4 {
+  font-size: $MEDIUM_SIZE !important;
+  font-family: "Made Tommy BOLD" !important;
+  color: $COLOR_TITLE;
+  letter-spacing: 0.5px;
+}
+
+h5 {
+  font-size: $MEDIUM_SIZE !important;
+  font-family: "Made Tommy BOLD" !important;
+  color: $COLOR_TITLE;
+  letter-spacing: 0.5px;
+}
+
+h6 {
+  font-size: $MEDIUM_SIZE !important;
+  font-family: "Made Tommy BOLD" !important;
+  color: $COLOR_TITLE;
+  letter-spacing: 0.5px;
+}
+
+@import "../alert/alert.scss";
+@import "../loader/loader.scss";
+@import "../panel/panel.header.scss";
+@import "../panel/panel.admin.scss";
+@import "../panel/panel.content.scss";
+@import "../panel/panel.login.scss";
+@import "../panel/profil/panel.profil.scss";
+@import "../panel/portfolio/panel.portfolio.scss";
+@import "../panel/customer/panel.customer.scss";
+@import "../index/header/header.scss";
+@import "../index/widget/social.scss";
+@import "../index/widget/arrow.scss";
+@import "../index/slider/slider.scss";
+@import "../index/index.scss";
+@import "../card/card.scss";
+@import "../index/customer/customer.scss";
+@import "../loadingPage/loading.scss";
